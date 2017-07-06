@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TarangDBModelStoreContainer" CdmEntityContainer="TarangDBEntities">
+    <EntitySetMapping Name="TarangTBs">
+      <EntityTypeMapping TypeName="TarangDBModel.TarangTB">
+        <MappingFragment StoreEntitySet="TarangTB">
+          <ScalarProperty Name="learnerID" ColumnName="learnerID" />
+          <ScalarProperty Name="learnerName" ColumnName="learnerName" />
+          <ScalarProperty Name="currentMajor" ColumnName="currentMajor" />
+          <ScalarProperty Name="strongestSkill" ColumnName="strongestSkill" />
+          <ScalarProperty Name="favouriteSubject" ColumnName="favouriteSubject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

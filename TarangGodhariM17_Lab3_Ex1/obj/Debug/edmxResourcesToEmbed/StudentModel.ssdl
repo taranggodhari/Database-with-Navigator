@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TarangDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TarangTB">
+    <Key>
+      <PropertyRef Name="learnerID" />
+    </Key>
+    <Property Name="learnerID" Type="int" Nullable="false" />
+    <Property Name="learnerName" Type="nchar" MaxLength="50" />
+    <Property Name="currentMajor" Type="nchar" MaxLength="50" />
+    <Property Name="strongestSkill" Type="nchar" MaxLength="50" />
+    <Property Name="favouriteSubject" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="TarangDBModelStoreContainer">
+    <EntitySet Name="TarangTB" EntityType="Self.TarangTB" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
